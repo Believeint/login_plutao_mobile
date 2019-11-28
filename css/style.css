@@ -1,0 +1,90 @@
+*  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+body, html {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    position: absolute;
+    z-index: -2;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/ministerio_publico_militar_predio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: blur(8px); */
+
+}
+
+div#image-overlay {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    background-color: rgba(0, 0, 0, .8);
+
+    /* filter:blur(4px);
+    -o-filter:blur(4px);
+    -ms-filter:blur(4px);
+    -moz-filter:blur(4px);
+    -webkit-filter:blur(4px); */
+    /* backdrop-filter: blur(4px); */
+}
+
+div#main {
+    z-index: 10;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(80,80,80,.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+div#main img {
+
+    width: 150px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(80,80,80,.1);
+}
+
+div#main h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 1.2em;
+
+    text-align: center;
+    font-weight: 800;
+}
+
+div#main form {
+
+    margin-top: 40px;
+}
+
+div#main div:nth-child(3) input{
+
+    width: 250px;
+    height: 30px;
+    background-color: dodgerblue;
+}
